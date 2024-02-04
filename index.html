@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>LEPL Canteen Menu</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <section class="menu">
+    <div class="menu-container">
+      <div class="menu-head">
+        <img
+          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMRDxISEhEWFRUXEBcZFRcVEhcYFRYYFxUYFhkWFRUaHikjGBonGxoXJD0iJikrLi4wFx8zODMyNyguLisBCgoKDg0OGxAQGislICYtNy0tLS0tLS0tLS0tNzUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAQQDBQYHAgj/xABAEAACAgECAwUFBwIDBwUBAAABAgADEQQSBSExBhMiQVEzYXGBkQcUIzJCc7JSYhUkoTRDcoKxwfBjk6Ph8Rb/xAAbAQEAAgMBAQAAAAAAAAAAAAAAAQIDBAUGB//EADMRAAIBAwICCAYABwEAAAAAAAABAgMEESExElEFEzNBYXGBsQYiI5HR8BQyUqHB4fFC/9oADAMBAAIRAxEAPwDmuJH8az9xvP8AvMryxxL21n7jfzMrzz8t2fXrZfSj5L2EREqZ8CIiBgREQMCIiBgRmJEEMnMS5oOE33ruo09ti5I3JWSuR1G7pmWK+zmsZyg0d24AEg1kAA9PEeXr5+UyqjPkzRl0nZxbTqR08TV5jM3bdj9eBk6G35Gsn6B5HHuyuq0QD3Vg1kD8Ss7kUnyfzU+8jHvlv4epjODGul7JzUFUWWaWIxEwnSWoiIkE4EREDAiIgYEREDAzGTESSGi7mIiZDSwYuJe2s/cb+ZleWOJe2s/cb+ZleUluzYtuyj5L2EREqZxERAEREAREQCJ03Ynssddcd5KUIRvYcmdiMitD5HHMnyHxnM5A5npieq8E4NTpOH6TVauxqhTm8J3mxWttGR3gI8TgeEAH45m5Z0lOWX3HmviPpCdvRUKbxKXf3pG/4VxGjT6wcM0+mKhKu8Zl2itS2Cd247nbBUk8z4hn1m+1GqChtil2Ck7V6kgZAJ6An3+s5jjXDdPq9bo0sd67gLrq+4bBZAa1y74yNw28uvIjJAm/4/xAaTSX6jbu7upm29MkdBny5zrHz4o0rfrK9NqF1N2kVqlZ6BXQzZbnhmsrYg45csTYcZ1CV6ayyxd9aoTYMZ8AHjO39WFycDrjlPCuJfaJxC6wOt/dY6JUML0xls53dPOaZuPaty4OpufvFKspsZg4cbSu0nHPp0gF7i33f7zb90cvRuzXlWUqCMlMMAeRyAfTEpzrO03Ys6HQ6a7AD7ymow5ZSWyUcEgYHLbjH6h16nlDONdQ4ajPpfQF119nHLy1o/3yERE1jtiIiAIiIAiIgCIiSQy7ERLmkYuJe2s/cb+ZleWOJe2s/cb+ZleVluzPbdlHyXsIiJUziIiAIiIAiIgGSi4VsHOPDllDLuRnXmiuuRlSR/05EZm91n2k6jUaZ9PqaKbgwHP8ROhBBYK3Pp5YnK6/oPjKc7FmvpHzf4jlm+a10S/UercJ7Rpqf8L1CVd3bp9WukuVfy91dRYFK8ydm5FxnoRidN2b7caTiIOnsx3js6d09Z22oNxzg5HNBkqTy59cTw/hKXvYE06uztjwoCScHkSOnI4O4/lIByMTse1eg1nDNVVxAmsW2A5NdeUSw0BHJGNu5iznzyQTzzNo4J6L2l7BabVaZaKkTTbbQ6tXSvoQwKgjOR7+oE+uCfZ5odLsYVd5YmCLLGLHcOe4JnaDn0E8J1fGtTa/eWam1mznJtbl/wAODhfgMTuex/bviC06hnU6qqigMxb2iknCbrAMsOTEkgnCk+UA677XdTt0C17c95qEXdnku3NvzJ2H/WePGdB2l+0O3X0il9NUo7zcGDMzKQCuVzgc1Zh06MZoG6/Kcy+T4k/A9x8KyXU1I414s/dCIiaB64REQBERAEREARESSGXYiJc0jFxL21n7jfzMryxxL21n7jfzMryst2Z7bso+S9hERKmcREQBERAEREAx217htmum0z/0msK4ODOlYy0cTw/xVQSnCqo76N+wSxlOVYg+oJB+onrPZT7RaLqV0nEQPyFWtsAaqwDp3g8mx59CR5ZnF9lNHw+6m5NW9tVoYMlqAlFQ4T8QAEBQxySccsc5Zs+zXXixUVEcNnbYtq92eRIPPmMgenmJ0DyJ6Nxr7OuHaitHr/y4B3myojDIVzz3ZXGOefLHpN72d7L6XQ1vXSh8YHeM53NYMEAMcYxzPIYHM+so9j+GivRtozrBe9QKPt2nuXbLBQDnmuRjPoOQ6TyztB2l4rpdS+nt1zlqmxlQgDAgEMQF55GOR6QDQarh/wB31d1BB/CtdRnrhThT78rg598+p9X6u3UWtfe5exlxuIUcgAByUADkB0E+Zx7qalU0PpHw9bTo2aU1htt+ndkmIiap3hERAEREAREQBERJIZdiIlzSMXEvbWfuN/MyvLHEvbWfuN/MyvKy3Zntuyj5L2EREqZxERAEREAREiCBK3EMeEy0o6T0X7PtLVVorLrkYraSWZCSQlRdURgOahjvIYcjnBIwM7lnByqZ5HnfiW4jTtOBrWTwvTU4TsV2j/w/Vd8a+8VqjW67seFmUkjyY+HoeXPynvnDNbptXSDRYrJtAxW2NoK4CkKcry8vdPDtJouFai20d/folGSgtAsU88YBHiDdPCcnrz5TR8P4nbpLzZprmUgkB1GA65IBZG5EHkcMD5eYnWPnp7fqvs8oUAaW2zTchkJZZhsebEOGLe8k/CedfabwR9PqaGZCytWqteTk3WKTneeXiC7R0yQPPEudl/tTuqbbrN1yE5DKEFi56gjkGH0IxLfbf7QdPrdO2mpqc7mQ95YAoG1gx2rzOeWPLqfnWbxFszWseKtBeK9zhW6/AyJJ6n4xOAfXYrQRESCwiIgCIiAIiIAiIkkMuxES5pGLiXtrP3G/mZXljiXtrP3G/mZXlZbsz23ZR8l7CIiVM4iIgCRJkQQTBHulvg+nrs1WnS4kVvcqPtODh/CMHy8RE9o4V2A0NDBxT3jA5BtY2YPqFPhH0m3RtnUWcnn+k+nI2U+rcG3jK2weM6DhV93sqXIIHjKME5kBcORgkkgADqSJ7v2c4UNPpa6hzArVea4JAGMsD5nmTn1mv7YcRbTNpXCuyd627Zp2uCHYdjuqupwPF68znqBJ0PFtTqEDUMrZ6F9K9SD3lmtJPwUE+uJ0aNGNJNI8X0h0lVvpKU8JLZLY4/7RPs8GG1OkU5Ay9Y/1Kj093l8Py+SsMcjP1VplcIveMrOANzKhRSfMqhZio92T8Z59267AVXMLq2FILfiMEyFyR4mAI8Hv/TnPTOMxzjxWdF2Y7I363xqyVVhsB7W2h3/orHVj8OmZ6bR9kehBXdZe2PzAuoDfRcgfAzaV8Dp0Fqmiuumtk2mzYXtQg59o7HCHz5cup5ZIPUlSaeUeX8f7J6nRJ3lyKaywG+t9wBPQMCARn4Y980M7P7UReusCW2WNXsBoLkbSxB3kBQBuB5dM4x8+NInFuYRhPhifSuhLmtXtlOrJNvly8fERIkzXO0IiIJEREAREQBERJIZdiIlzSMXEvbWfuN/MyvLHEvbWfuN/MyvKy3Zntuyj5L2EREqZxERAEiTEEAZ8jgkjB9COYP1n6I7OcSGq0dF/nZUCw9G6OvyYEfKfncTecM7Y6rRaY06fGBabMsgbahxuXB6Ddzz/AHH5b9jUw3A8l8U2jlSjXiv5dH5P/Z3/ANoGo1Ch0Dqm9h3Fj8qegyjeS3Z6M+V9NvWarsz9pT02DTcTQowwO924x6d4o8v7l5e7zmj0P2oXODVrqK9RQwIsCptfB8xz2kj5dOolPi6KKxYtVuo4axxTbYNttLZwyo/5goI/UNrHyJGZ0zw571RcrqGVgykZBBBBB6EEdZkK56zwns12iv4Z46mOp0ROWXo1WfMrn8NvnsJPXPT2bgnF6dZSt1Dh0P1U+asPIj0gGLRnuLBQfyNnuD6YGTSfgOY/tyP087PEdKLayudp6qwGdreTY8/h0IJB5GfXENKLUK52nIKsOqsOasPgcfHoeRkcO1JsrBYbWBKuv9LryI+HmPUEHzgHN8Hur1FbaTU1IdrFDW43hWQZNYJ6jGGRupQjzVpzXGPs3TeVptNW9j3XeeOsnr3TH8yMOeDzyB0yOe77d6c6axOIJkKCteq29Qmfw7wPNq3OPersDyJnS6R01eny3QjDBT0YYOUbr6MrehUiVlCMlhozULmrQlxU5NPwPFOLdj9bpsl9MzKBzek94v0Hi+qiaFTnmJ7D247Qtp9BZSzY1DnulI5FkcHNwx08G4eWHGPSePYx9ZyrqlCm0onvegb+6vISlWxhaJ7Z5/YSZEmap6IRESCRERAEREkhl2IiXNIxcS9tZ+438zK8scS9tZ+438zK8rLdme27KPkvYRESpnEREAREQCJY0GsaixLkxuRsqD0YYIZG/tZSVPuMwSBLRk4vKMFejGtTdOWzWD27hHAOF6yqvU16Okhxn8gGG6FWUctwPLp5TqPuqd33Wxdm3bs2jZt/p29Me6eIdh+1R0NxD5OnsI7wDmUbkO9UefIAEeY945+4abUK6K6MGVgCrA5DA8wQZ26VVVI5XqfLukLCdnWdOW3c+a/dzxP7Q+D1cM1aNpLDWbELmog7AM7TsbzHXwn15HHIUOzPHWpu77SFarD7XTscUXj+0/7tsZPoPcOR9s432e02tCjUUrZtztJyGXPXDAg4OB9J4/8AaL2EbQt9404J05xkZJalveepQnGD5Hr5TKaJ692e47Vrau8ryGU7bK25WVPjJR18j5+8GZj+Hqh/TchB9BZWMj5smf8A2RPCeyva19NcrseYAXf6pn8lg/UnXHmucjzDe138RS/SLqUOQjJZy54CsN/P/g3j5/KAbXW6ZbanrcbkdCrD1DDBnn32bap6UupsbNdGqfTmwnwnaT3b7unqh+NQ8pse0vHdq/5m37pQwbagJ+9ajHllfYIfm3PqvScN2i7SltINHU1Ozdlvu27uq69oxp1Y+1OdxZ8AHlyz0rOahHiZsWttUuaip01lv9yUe2vHvv2saxT+Eg2U+9Qcl/8AmPP4BZoJJicOpUc5OTPqVjaRtaMaUe4iTETGbYiIgkREQBERJIZdiIlzSMXEvbWfuN/MyvLHEvbWfuN/MyvKy3Zntuyj5L2EREqZxESIIJiRJgCJEQMkgzoeyfa27QNhfxKSctUTjBPVqz+k+7of9ZzsmZKdSUHmJqXdlRu6fBVWV/f0Pfuz3azS60DurQHxzqfC2r/y+fxUkTd21qylWAKkEEEZBB5EEeYn5nHl05HI58wfUHyM22i7Ua2kAV6y1QOgYiwf/KGnQhexf8yPH3HwtWTzRkmuT0f4LP2ldjvuFotpH+XsJwOvdP1KE/045j4EeXPW9lO1dmjFtTZai2tldP6SVIDoPIj/AFHwEscV7TazVVmq/Ul6zjKd3UoODkflQHqPWaZEA6CTK9gtlkxUPhi6k/qNRX3M3GHbU6u652yHsJBy5yuTtA3+ILjyPT0HSfHuiRNCrWlUep6+w6MoWccU1r3vvfqJMRMJ0hERAEREAREQBERJIZdiIlzSMXEvbWfuN/MyvLHEvbWfuN/MyvKy3Zntuyj5L2EREqZyJt+z3CV1LWBrCmyl7MhQ2QnVeo5zUTquwNLNbqMAn/JXL82UAD4mZaUVKaTOf0nVlStpzi8Nfk1vZ3hC6q56y+3aljA7QcivmQefI4mZOz+/QnU1OWK2YsrIwyj+vIJ5f/fpNt2J4ZZXqCXrZd2nvwCMHkoAyPLJOB64Mq8J1lmjXTWsrd2xuSxCOToxUOhB8+RIz6TPGnFRTkv3KX+Tk17ypKvJUJp44cLTXSWV64Sz3Noq0dnha6LW/hGm761mTAqQZyMA+I+7+74zBVw2u9lSh2Z2uFYV0AyrAneCCfCMcx5Tq0NFd2q09Vo2X8ORdOSeRPN1TPvBx8ppOydDaXW1X3qakW/Yd4IO5ldOXuAPM9MQ6aylj9/dTHC9qunKbm00k4rT5sp7rv108CtVwJLWurqt32UqzYKYWwIcP3ZBJGD69ZX4jwlK9LReHybd+FKgY2kBstnnzIm94BQ2j1uotuyErru5n8r7vDWEP6t3XAmPifDbrOHaBUqZiHvyAOY3uu3PoDt6x1acXha+vPQtC+nGrFOpmOVq8d8G2s45pPwzhmsfgA+4pq0csN+21No3INxXf15ruB5++a7iemStlVGZh3aEllAxvUPjAJ6Aj5zoeHaltEaO9Qml0srtGDtdDc/Me/HiHqM+s1XaylE1bpUd1arUEOc5XuEwc+cpUhFQyt9P37YNmyuatS44XLMXxNNY1WcYfit1zT1NNERNY7xMSIgExIiATEiIBMREEiIiAIiJJDLsREuaRi4l7az9xv5mV5Y4l7az9xv5mV5WW7M9t2UfJewiIlTORNnwXhB1RdVdVKVvYd4Ygqn5sYB54msnVdgM99f4d3+Su5c+fhHLlz+ky0VmaTNDpKrKlbTnDdbFDh3Z4XuK67qvFUzAlXA8H5gRszuxz+EwWcHIpN9bh0DBHZQQyE9N6MAQD6jM6PseC+rVhV3anT2qFAbBKVc8biSR4hzOecp9n/wdDr2sGBZWlVYblvs3E+H12g5+cz8Ecbc+fccf+Lqxk/mzjg0xHXibTWUt9M6eOhr9fwM1XUVtapNqIwIDYUOcJu5eZ+kgcHci2xrMVVv3ZsYMVdumysYyx+gxzm57R1Gy/h1iZKtpdPggcvAfFn0xMessFvCAE5mrXWNaB1C2AhXI9PEBmHTj82F+4/JELys1TbktdG8LTLfhplLBpDw4vbTXW62d9t2EFgAWcpgg/lIIOfrM1fZ/8c0vYiWDUdyAwY7m6buQOF6df6hHDNIa/wAazeo7o92UA35djUrKGIH9Z+RM6HilYbi2j1CA7NSdPaDjqdwDfPkPrIjTT+Z89vAvWu5xm6cZLHDJ8WE8yj8zXLb8ml03Znff3Caio2d5ZWR4wN1SkkHI6YBwenKUk4STXZazgVI+zvNrHc3kqoOZ5c/IYnRcEz//AEDcj/tep8v7bpg1xD8HRVPOrXWG3HkLA21z7ugz75PVxw2ltn+2CFdV4yjFz0koa4SxxZzj7Y101NdX2ac6imnvEAvTdTZ4jWw6+mQfcenzlV+DMr6iuxtj0g7lIY7gCF8JHvZfkZ0lxxp+G0kfiivUuR+oI4fbn0zznxfqE1Wgs1BfGopoFVv/AKqmxClh942sP/BJ6qHd+6bea3Mcb+5zq/lzw5SWj4mlLykljwfgc/wng/f132d6qClA7bgxO08sjaOfOX37KWAXk2V/h0rbgbjvrYeF6zt5j49Jk7Kf7JxLOSPuozjl+vmM+XKWuBceN2vrW0KtdlH3XZnktZXagyep3Y5++VhCnwxzu/8AZmuLm8VWq6b+WGuy5KWF55ZoquFqaRa96IMnwlXLcmC+Q/8AMH0mTjfA/urWI1qM9ZTKqGyd/QgkYmDjqlbXpzuFY7sEeZUksfm5ebztxo3s1+qZFJFdaO/9q7BlufX5ekjgjwvTbT8mRXNXrocVTEZJy1UdFlYXqn4s0vC+EG+u6wWKopr3uGDZK9Mrgdc+UscJ4D94HhuRW7mywowbIWtiCSQpGTjOPfLvZOs/d+JAZP8AlPIZ/WJm7FaZ1tuLAjdoNQRkcyMbc469QfpEYJ8OhW6vKtPrsVMcLjhad6Wfya/TdnldLXXUVla6VsY7XztYsAoG3rkdJS1/CHqrrtyHrckK6E7cjqrBgCre4jym47JqTpeJYz/sy9B/f/8AsyJWTwpKCubb9cGpTo20IELgHoCRjPvjq4uOcdz9xK7q0q7jKeUpJYwtmst6cvtg5GTPvUUlHZWGGBKsPQg4I+s+JrM78ZKSyhERBZl2IiXNIxcS9tZ+438zK8scS9tZ+438zK8rLdme27KPkvYRESpnImejVWJnY7pnrsdlz8cHnMMiSm1sY504zWJLPmXP8UuznvbM+vePn5HMx2W2WsNzM5zgAszHn5DP/aV5tezeqSq8GwgKVdd2M7CyFA+PcTLxbk0mzUrU6dCDqQgspaYSISvVKhrAuC8yUAs24zgkj0zMKrdSzFe8rKgZwHUgN03e458/WXdDtqGorNtfPTWKm1mKlnes4B2+YQ/6SzxXiVdtTqx3Wq4CP5PSX3gH3rjl7j7pl4VjOTnRuJ9a4Kmmm1l4aznGrT331+/cakaq60lN7uWPTe7bvdtzzlin70zAKbiQSqjNpIIHMIAeRHoJGi1Fdd+kckbUapn2ggjbYS2/PV8f9pnJRLUXvgV71yzVlsbG2EKDgHJ2Yx7x8oSzq2y9Srh4jTWMZWVnXVPbyXoynuvFhw1u/dtJBs37ufgJ658J5f2yU+8Vs7/iqwOLG8YOTjlYfmOvqPWbvRcXqFGTzt79XdGOFbdXdXY24AkDFvx8K+hzdp7Q6bKNzC1+AIRlmQHTqre/w1k8+fKZI0o/1mrUvK8W0rdNbbcv8cvRnNJp9VvZgt2/kGYCwN4ugLDnz5cpiXRX5ICWZOQfA+TggkN8Dg85v/8AF6hawZt9f3UqSP1WJdZqKsZ/uKj5yH4tS2qstyoD6W3cGztN1tWGB288bsDr5dZHVwf/AKLfxlwk5dSlpnZ+i98cjRVpqK1fb3qqDhsd4qgnlh8cs9ORmL7rYjHwMpTBPhIKgHkx9OY6+6dE2vqF1lwuXBesFDvzsVqmcIuMYLIAMkEKp65kanidR7xRYP8AZWTIzh2Ooa4Acv6T9RiJUopaMmF9Vc39Ja76Pw3013x/w5+jTWsQyI7HnhlDZPPBYEe/z9ZaNOrbcSL25FXJFp5A81bPlkdPdN3/AIlpTWvi5fcr6tlhxhnYFUJXpnB55mtPFTbXqmssAssekqOY9mzEhfQDI/1kOEVtLXwLRuq1VuSpJYaWqedXhd2y7+XiUdMuoVcp3qq2CNhdVbdyH5eufL1mR31SlyWuBXAfLWgqPIOc8uvn6y/xWxLdUbqtQiJbsH6g9ahVyrKB+gr5HyGJc/xOoJYpsUnFirt3EFW0yUV4JALY2jJwOeZZQX9T08UY6l1LSXVRk2tfleVto3jXkaKuvU1kqq3KcbmC96pIP6mA65x1PoZiC3M6sBazkZU+MuQPNT1wPWdBo+NVVFNyq3dpWSVZvaV2WlNmRzB35OcDmfhK2l4jUgoVirKNMUtAJDL+P3g28vzcl5efqOsjgjtxEq6rfNLqF9t9H69xztpJJ3ZzzznrnPPPvzPmZ+I6nvLrLMY32O+PTc5bH+swTVe56Ci24JtYeNuQiIgyMuxES5pGLiXtrP3G/mZXljiXtrP3G/mZXlZbsz23ZR8l7CIiVM4iIgCQJMSSADGYiQRgZiIgcIzIkxJGBmMxEDAjMRBOBmMxEgYGY3REDAzGYiBgiTEQBERJDLsREuaRi4l7az9xv5mV5Y4l7azn/vW8v7zK31+krLczWz+lHyXsTEj5n6GPmfoZUz5JiR8z9DHzP0MDJMSPmfoY+Z+hgZJiR8z9DHzP0MDJMSPmfoY+Z+hgZJiR8z9DHzP0MDJMSPmfoY+Z+hgZJiR8z9DHzP0MDJMSPmfoY+Z+hgZJiR8z9DHzP0MDJMSPmfoY+Z+hgZJiR8z9DHzP0MDJMSPr9I+v0kkZL0Rg+h+smXNM9C1X52/4j/1mCInUR4OOwiIgsIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAiIgCIiSQzPERIIP//Z">
+
+        <h2>Canteen Menu</h2>
+        <div class="ribbon-elements">
+          <div>Canteen meal should be cancelled by 8:30 am</div>
+          <div>||</div>
+          <div>February canteen manager : <b>Subhamoy Pal</b></div>
+          <div>||</div>
+          <div>Contact on 7718172344 or luc.kol66@outlook.com</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="flex-container">
+        <div>
+          <img src="./scaner-modified.png">
+        </div>
+        <div>
+          <img src="scaner-modified 2.png">
+        </div>
+        <div>
+          <img src="scaner-modified 3.png">
+        </div>
+      </div>
+      <div class="flex-container1">
+        <div>
+          <h6>Pay for breakfast package</h6>
+        </div>
+        <div>
+          <h6>Pay for lunch package</h6>
+        </div>
+        <div>
+          <h6>Pay breakfast+lunch pack</h6>
+        </div>
+      </div>
+
+      <div class="food-iems">
+        <div class="food-item featured">
+          <div class="food-img">
+            <img
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="food-img">
+          </div>
+          <div class="food-content">
+            <h2 class="food-name">01/02/2024 Thursday</h2>
+            <div class="line"></div>
+            <h3 class="food-price">•Breakfast: Ruti, Mixed Veg<br>•Lunch: Vat,Dal,Bandhakopir Torkari,Papad</h3>
+          </div>
+        </div>
+        <div class="food-item featured">
+          <div class="food-img">
+            <img
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="food-img">
+          </div>
+          <div class="food-content">
+            <h2 class="food-name">02/02/2024 Friday</h2>
+            <div class="line"></div>
+            <h3 class="food-price">•Breakfast: Ruti, Ghugni<br>•Lunch: Vat,Chicken,Salad,Chatni,Papad</h3>
+          </div>
+        </div>
+        <div class="food-item featured">
+          <div class="food-img">
+            <img
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="food-img">
+          </div>
+          <div class="food-content">
+            <h2 class="food-name">03/02/2024 Saturday</h2>
+            <div class="line"></div>
+            <h3 class="food-price">•Breakfast: Ruti, Alu Soyabean<br>•Lunch: Vat, Dal, Fulkopir Torkari, Papad</h3>
+          </div>
+        </div>
+        <div class="food-item featured">
+          <div class="food-img">
+            <img
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="food-img">
+          </div>
+          <div class="food-content">
+            <h2 class="food-name">05/02/2024 Monday</h2>
+            <div class="line"></div>
+            <h3 class="food-price">•Breakfast: Ruti, Badhakopir Torkari<br>•Lunch: Vat, Dal, Aloo Bhaja,Mach er Jhal
+            </h3>
+          </div>
+        </div>
+        <div class="food-item featured">
+          <div class="food-img">
+            <img
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="food-img">
+          </div>
+          <div class="food-content">
+            <h2 class="food-name">06/02/2024 Tuesday</h2>
+            <div class="line"></div>
+            <h3 class="food-price">•Breakfast: Ruti, Begun Vorta<br>•Lunch: Vat, Dal, Mixed Veg, Dim Vaja</h3>
+          </div>
+        </div>
+        <div class="food-item featured">
+          <div class="food-img">
+            <img
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="food-img">
+          </div>
+          <div class="food-content">
+            <h2 class="food-name">07/02/2024 Wednesday</h2>
+            <div class="line"></div>
+            <h3 class="food-price">•Breakfast: Egg Chow<br>•Lunch: Vat, Dal, Macher Matha Diye bandhakopi, Mach er Jhal
+            </h3>
+          </div>
+        </div>
+        <div class="food-item featured">
+          <div class="food-img">
+            <img
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="food-img">
+          </div>
+          <div class="food-content">
+            <h2 class="food-name">08/02/2024 Thursday</h2>
+            <div class="line"></div>
+            <h3 class="food-price">•Breakfast: Ruti, Mix Veg<br>•Lunch: Vat, Dal, Posto, Papad</h3>
+          </div>
+        </div>
+        <div class="food-item featured">
+          <div class="food-img">
+            <img
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="food-img">
+          </div>
+          <div class="food-content">
+            <h2 class="food-name">09/02/2024 Friday</h2>
+            <div class="line"></div>
+            <h3 class="food-price">•Breakfast: Ruti, Alu Fulkopi Bhaja<br>•Lunch: Vat, Chicken er Jhol, Salad, Chatni,
+              Papad</h3>
+          </div>
+        </div>
+        <div class="food-item featured">
+          <div class="food-img">
+            <img
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="food-img">
+          </div>
+          <div class="food-content">
+            <h2 class="food-name">10/02/2024 Saturday</h2>
+            <div class="line"></div>
+            <h3 class="food-price">•Breakfast: Ruti, Alu Soyabean<br>•Lunch: Vat, Dal, Posto, Papad</h3>
+          </div>
+        </div>
+        <div class="food-item featured">
+          <div class="food-img">
+            <img
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="food-img">
+          </div>
+          <div class="food-content">
+            <h2 class="food-name">Yet to be scheduled...</h2>
+            <div class="line"></div>
+            <h3 class="food-price">•.......<br>•.........</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+<footer>
+  <div class="footer-ribbon">
+    <div>In March, canteen manager will be Dipankar Garai </div>
+    <div>||</div>
+    <div>Contact: luc.kol113@outlook.com</div>
+  </div>
+</footer>
+
+</html>
